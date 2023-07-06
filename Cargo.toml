@@ -1,0 +1,14 @@
+[package]
+name = "inverse-kinematics"
+authors = ["Maxwase <max.vvase@gmail.com>"]
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+eframe = { version = "0.21.3" }
+egui = "0.22.0"
+
+[target.'cfg(target_arch = "wasm32")'.dependencies]
+wasm-bindgen-futures = "0.4.34"
+console_error_panic_hook = "0.1.7"
+tracing-wasm = "0.2"
